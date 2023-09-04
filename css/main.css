@@ -78,7 +78,7 @@ body {
 }
 
 .landing-section {
-    background-image: url("/images/background/spirit-guide_1920x1080.jpg");
+    background-image: url("../images/background/spirit-guide_1920x1080.jpg");
     background-size: cover;
     min-height: 100vh;
     position: relative;
@@ -328,7 +328,7 @@ body {
 }
 
 .services-properties {
-    background-image: url("/images/background/beautiful-flower_1920x1080.jpg");
+    background-image: url("../images/background/beautiful-flower_1920x1080.jpg");
     padding: var(--section-padding) 0px;
     background-position: center center;
 }
@@ -477,7 +477,7 @@ body {
 }
 
 .portfolio-video {
-    background-image: url("/images/background/alone_1920x1080.jpg");
+    background-image: url("../images/background/alone_1920x1080.jpg");
     padding: calc(var(--section-padding) + 70px) 0px;
     background-position: center center;
 }
@@ -523,7 +523,7 @@ body {
 
 .about-section-second {
     padding: var(--section-padding) 0px;
-    background-image: url("/images/background/wishlist_1920x1080.jpg");
+    background-image: url("../images/background/wishlist_1920x1080.jpg");
     background-position: center center;
 }
 
@@ -625,11 +625,11 @@ body {
 }
 
 .about-section-third .testimonial .img.first {
-    background-image: url("/images/testimonals/aldi-sigun-K-sdQ12jZeY-unsplash.jpg");
+    background-image: url("../images/testimonals/aldi-sigun-K-sdQ12jZeY-unsplash.jpg");
 }
 
 .about-section-third .testimonial .img.second {
-    background-image: url("/images/testimonals/shubham-dhage-t0Bv0OBQuTg-unsplash.jpg");
+    background-image: url("../images/testimonals/shubham-dhage-t0Bv0OBQuTg-unsplash.jpg");
 }
 
 .about-section-third .testimonial .testimonial-text {
@@ -729,7 +729,7 @@ body {
 
 .about-section-fourth {
     padding: var(--section-padding) 0px;
-    background-image: url("/images/background/worlds_1920x1080.jpg");
+    background-image: url("../images/background/worlds_1920x1080.jpg");
     background-position: left center;
     color: white;
     text-align: center;
@@ -829,7 +829,7 @@ body {
 
 .pricing-section .subscribe {
     padding: var(--section-padding) 0px;
-    background-image: url("/images/background/midway-point_1920x1080.png");
+    background-image: url("../images/background/midway-point_1920x1080.png");
     background-position: center center;
 }
 
@@ -974,7 +974,7 @@ body {
 
 /* start footer */
 footer{
-    background-image: url(/images/background/last-goodbye-to-old-demons_1920x1080.jpg);
+    background-image: url(../images/background/last-goodbye-to-old-demons_1920x1080.jpg);
     padding-top: var(--section-padding);
     padding-bottom: 30px;
     background-position: center;
