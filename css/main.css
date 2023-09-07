@@ -67,6 +67,12 @@ body {
     background-color: black;
 }
 
+@media (max-width:768px) {
+    #separator span:first-child{
+        width: 50%;
+    }
+}
+
 #separator span:nth-of-type(2) {
     display: block;
     width: 14px;
@@ -78,7 +84,7 @@ body {
 }
 
 .landing-section {
-    background-image: url('../images/background/spirit-guide_1920x1080.jpg');
+    background-image: url("../images/background/spirit-guide_1920x1080.jpg");
     background-size: cover;
     min-height: 100vh;
     position: relative;
@@ -125,6 +131,7 @@ body {
 
 .header-content nav ul {
     display: flex;
+    backdrop-filter: blur(4px);
     position: relative;
     align-items: center;
     justify-content: flex-end;
@@ -268,7 +275,7 @@ body {
     position: absolute;
     bottom: 20px;
     left: 50%;
-    margin-left: -10.5px;
+    transform: translateX(-50%);
 }
 
 .landing-content .slider-changer i {
@@ -295,7 +302,7 @@ body {
 }
 
 .services-section {
-    padding: var(--section-padding) 0px;
+    padding-top: var(--section-padding);
 }
 
 .services-section .services-content {
@@ -370,9 +377,7 @@ body {
     }
 }
 
-.portfolio-section {
-    padding: var(--section-padding) 0px;
-}
+.portfolio-section {padding-top: var(--section-padding);}
 
 .portfolio-content .portfolio-nav {
     margin: 0px auto;
@@ -510,9 +515,7 @@ body {
     cursor: pointer;
 }
 
-.about-section {
-    padding: var(--section-padding) 0px;
-}
+.about-section {padding-top: var(--section-padding);}
 
 .about-section img {
     max-width: 100%;
@@ -701,7 +704,7 @@ body {
     border-style: solid;
     border-color: rgb(31, 32, 33) transparent transparent;
     border-image: initial;
-    bottom: -10px;
+    bottom: -9px;
     left: 50%;
     margin-left: -5px;
 }
@@ -748,9 +751,7 @@ body {
     margin-top: 0px;
 }
 
-.pricing-section {
-    padding: var(--section-padding) 0px;
-}
+.pricing-section {padding-top: var(--section-padding);}
 
 .pricing-section .pricing-content {
     display: grid;
@@ -843,9 +844,7 @@ body {
     border: 1px solid white;
     width: 50%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+    align-items: stretch;
     height: 40px;
 }
 
@@ -854,7 +853,7 @@ body {
     outline: none;
     border: none;
     color: white;
-    flex: 1 1 0%;
+    flex: 1;
 }
 
 .pricing-section .subscribe input::placeholder {
@@ -867,15 +866,13 @@ body {
     color: white;
     border: none;
     cursor: pointer;
-    position: absolute;
-    right: 0px;
-    height: 100%;
 }
 
 .pricing-section .subscribe i {
     color: white;
     font-size: 25px;
     padding: 0px 10px;
+    align-self: center;
 }
 
 .pricing-section .subscribe p {
@@ -1004,5 +1001,9 @@ footer p:first-of-type{
     width: fit-content;
     margin: 0px auto;
     padding: 20px 30px;
+}
+
+footer p:last-of-type span{
+    color:var(--main-color)
 }
 /* end footer */
