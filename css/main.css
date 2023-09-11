@@ -1,3 +1,4 @@
+/* start global rules */
 :root {
     --main-color: rgb(0, 199, 252);
     --main-color-background: rgba(0, 199, 252, 0.4);
@@ -7,6 +8,10 @@
 
 * {
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -35,6 +40,8 @@ body {
         width: 1170px;
     }
 }
+/* end global rules */
+/* start components */
 
 .special-header {
     text-align: center;
@@ -82,11 +89,13 @@ body {
     margin: -7px auto 0px;
     background-color: white;
 }
+/* end components */
+/* start .landing-section */
 
 .landing-section {
     background-image: url("../images/background/spirit-guide_1920x1080.jpg");
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
     padding-bottom: 70px;
 }
@@ -131,7 +140,6 @@ body {
 
 .header-content nav ul {
     display: flex;
-    backdrop-filter: blur(4px);
     position: relative;
     align-items: center;
     justify-content: flex-end;
@@ -140,6 +148,8 @@ body {
     margin: 0px;
     z-index: 1;
 }
+
+
 
 .header-content ul::before {
     content: "";
@@ -156,7 +166,8 @@ body {
     border-bottom: 1px solid white;
 }
 
-.header-content nav ul li:hover {
+.header-content nav ul li:hover,
+.header-content nav ul li.active {
     border-bottom-color: var(--main-color);
 }
 
@@ -166,7 +177,8 @@ body {
     font-weight: 500;
 }
 
-.header-content nav li:hover a {
+.header-content nav li:hover a,
+.header-content nav li.active a {
     color: var(--main-color);
 }
 
@@ -204,6 +216,7 @@ body {
         position: absolute;
         top: 100%;
         background-color: rgba(148, 148, 148, 0.47);
+        backdrop-filter: blur(4px);
         width: 98.5%;
         right: 0px;
         text-align: center;
@@ -236,12 +249,12 @@ body {
 .landing-content .text-box {
     line-height: 1.7;
     color: white;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .landing-content .text-content {
-    width: 70%;
-    padding: 100px 60px;
+    width: 60%;
+    padding: 60px;
     background-color: var(--main-color-background);
 }
 
@@ -300,7 +313,7 @@ body {
         width: 100%;
     }
 }
-
+/* end .landing-section */
 .services-section {
     padding-top: var(--section-padding);
 }
@@ -354,7 +367,7 @@ body {
 }
 
 .services-properties .text-box {
-    width: 70%;
+    width: 60%;
     line-height: 1.7;
     color: white;
     background-color: var(--main-color-background);
@@ -866,6 +879,12 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+@media (max-width:768px){
+    .pricing-section .subscribe button{
+        padding: 0px;
+    }
 }
 
 .pricing-section .subscribe i {
